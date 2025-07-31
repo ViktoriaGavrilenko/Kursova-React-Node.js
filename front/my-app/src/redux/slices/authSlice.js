@@ -14,7 +14,8 @@ export const fetchRegisterUser = createAsyncThunk("auth/registerUser",
     }
 )
 
-export const fetchUserData = createAsyncThunk('auth/fetchUserData', async (credentials, {rejectWithValue}) => {
+export const fetchUserData = createAsyncThunk('auth/fetchUserData',
+    async (credentials, {rejectWithValue}) => {
     try {
         const {data} = await axiosInstance.post(`${API_URL}/login`, credentials, {
             headers: {

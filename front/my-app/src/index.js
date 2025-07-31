@@ -28,7 +28,7 @@ root.render(
                             <ProtectedRoute>
                                 <Home />
                             </ProtectedRoute>
-                        }/>/>
+                        }/>
                         <Route path={'/favorites'} element={
                             <ProtectedRoute>
                                 <Favorites />
